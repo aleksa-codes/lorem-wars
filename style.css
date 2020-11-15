@@ -103,3 +103,21 @@ h2 {
     transform: translateZ(-2500px) rotateX(21deg);
   }
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .scroll-text {
+    animation: scroll 150s linear forwards;
+  }
+}
+@media (max-width: 992px) {
+  .scroll-text {
+    animation: scroll 190s linear forwards;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-text {
+    animation: scroll 240s linear forwards;
+  }
+}
