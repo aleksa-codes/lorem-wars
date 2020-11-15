@@ -132,3 +132,43 @@ h2 {
     animation: scroll500 240s linear forwards;
   }
 }
+
+/* ARROW */
+.arrow,
+.arrow:before {
+  position: absolute;
+  z-index: 99999;
+}
+
+.arrow {
+  top: 30px;
+  left: 129px;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(225deg);
+  margin-top: -50%;
+}
+
+.arrow:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
