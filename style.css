@@ -139,6 +139,7 @@ iframe {
   border-bottom: 1px #eee solid;
   -webkit-animation: arrow 2s infinite;
   animation: arrow 2s infinite;
+  z-index: 999999;
 }
 
 .wrapper {
