@@ -43,6 +43,33 @@ body::after {
   );
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  /* perspective gives us a 3d space within the element to work with*/
+  /* perspective also has the effect of pushing the content "down" */
+  -webkit-perspective: 450px;
+  perspective: 450px;
+}
+.scroll-text {
+  color: #ffc909;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  -webkit-animation: scroll 120s linear forwards;
+  animation: scroll 120s linear forwards;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
 /* GITHUB CORNER */
 
 .github {
@@ -99,33 +126,6 @@ iframe {
   margin-top: -50%;
   z-index: 99999;
   opacity: 50%;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 60%;
-  margin: 0 auto;
-  /* perspective gives us a 3d space within the element to work with*/
-  /* perspective also has the effect of pushing the content "down" */
-  -webkit-perspective: 450px;
-  perspective: 450px;
-}
-.scroll-text {
-  color: #ffc909;
-  font-size: 3vw;
-  line-height: 1.5em;
-  font-weight: bold;
-  text-align: justify;
-  position: relative;
-  -webkit-animation: scroll 120s linear forwards;
-  animation: scroll 120s linear forwards;
-}
-h1,
-h2 {
-  text-align: center;
 }
 
 /* MEDIA QUERIES */
