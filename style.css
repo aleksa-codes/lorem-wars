@@ -57,6 +57,99 @@ body::after {
   -webkit-animation: octocat-wave 560ms ease-in-out;
   animation: octocat-wave 560ms ease-in-out;
 }
+
+.arrow {
+  width: 0px;
+  height: 0px;
+  top: 30px;
+  left: 129px;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(225deg);
+  margin-top: -50%;
+}
+
+.arrow:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  -webkit-animation: arrow 2s infinite;
+  animation: arrow 2s infinite;
+  z-index: 999999;
+}
+
+/* MUSIC */
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -50%;
+  z-index: 99999;
+  opacity: 50%;
+}
+
+/* ARROW */
+.arrow,
+.arrow:before {
+  position: absolute;
+  z-index: 99999;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  /* perspective gives us a 3d space within the element to work with*/
+  /* perspective also has the effect of pushing the content "down" */
+  -webkit-perspective: 450px;
+  perspective: 450px;
+}
+.scroll-text {
+  color: #ffc909;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  -webkit-animation: scroll 120s linear forwards;
+  animation: scroll 120s linear forwards;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .scroll-text {
+    -webkit-animation: scroll 150s linear forwards;
+    animation: scroll 150s linear forwards;
+  }
+}
+@media (max-width: 992px) {
+  .scroll-text {
+    -webkit-animation: scroll 190s linear forwards;
+    animation: scroll 190s linear forwards;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-text {
+    -webkit-animation: scroll500 240s linear forwards;
+    animation: scroll500 240s linear forwards;
+  }
+}
+
+/* KEY FRAMES */
+
 @-webkit-keyframes octocat-wave {
   0%,
   100% {
@@ -102,48 +195,6 @@ body::after {
   }
 }
 
-/* MUSIC */
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -50%;
-  z-index: 99999;
-  opacity: 50%;
-}
-
-/* ARROW */
-.arrow,
-.arrow:before {
-  position: absolute;
-  z-index: 99999;
-}
-
-.arrow {
-  width: 0px;
-  height: 0px;
-  top: 30px;
-  left: 129px;
-  margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(225deg);
-  margin-top: -50%;
-}
-
-.arrow:before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #eee solid;
-  border-bottom: 1px #eee solid;
-  -webkit-animation: arrow 2s infinite;
-  animation: arrow 2s infinite;
-  z-index: 999999;
-}
-
 @-webkit-keyframes arrow {
   0% {
     opacity: 1;
@@ -164,33 +215,6 @@ iframe {
     -webkit-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
   }
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 60%;
-  margin: 0 auto;
-  /* perspective gives us a 3d space within the element to work with*/
-  /* perspective also has the effect of pushing the content "down" */
-  -webkit-perspective: 450px;
-  perspective: 450px;
-}
-.scroll-text {
-  color: #ffc909;
-  font-size: 3vw;
-  line-height: 1.5em;
-  font-weight: bold;
-  text-align: justify;
-  position: relative;
-  -webkit-animation: scroll 120s linear forwards;
-  animation: scroll 120s linear forwards;
-}
-h1,
-h2 {
-  text-align: center;
 }
 
 @-webkit-keyframes scroll {
@@ -216,27 +240,6 @@ h2 {
     top: -7500px;
     -webkit-transform: translateZ(-2500px) rotateX(21deg);
     transform: translateZ(-2500px) rotateX(21deg);
-  }
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 1200px) {
-  .scroll-text {
-    -webkit-animation: scroll 150s linear forwards;
-    animation: scroll 150s linear forwards;
-  }
-}
-@media (max-width: 992px) {
-  .scroll-text {
-    -webkit-animation: scroll 190s linear forwards;
-    animation: scroll 190s linear forwards;
-  }
-}
-@media (max-width: 768px) {
-  .scroll-text {
-    -webkit-animation: scroll500 240s linear forwards;
-    animation: scroll500 240s linear forwards;
   }
 }
 
