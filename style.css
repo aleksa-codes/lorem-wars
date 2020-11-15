@@ -66,6 +66,7 @@ body::after {
 }
 
 .arrow {
+  content: '';
   width: 0px;
   height: 0px;
   top: 30px;
