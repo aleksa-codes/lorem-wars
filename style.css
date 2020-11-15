@@ -120,6 +120,7 @@ iframe {
 }
 
 .arrow {
+  content: '';
   top: 30px;
   left: 129px;
   margin: -20px 0 0 -20px;
