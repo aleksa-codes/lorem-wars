@@ -58,6 +58,13 @@ body::after {
   animation: octocat-wave 560ms ease-in-out;
 }
 
+/* ARROW */
+.arrow,
+.arrow:before {
+  position: absolute;
+  z-index: 99999;
+}
+
 .arrow {
   width: 0px;
   height: 0px;
@@ -91,13 +98,6 @@ iframe {
   margin-top: -50%;
   z-index: 99999;
   opacity: 50%;
-}
-
-/* ARROW */
-.arrow,
-.arrow:before {
-  position: absolute;
-  z-index: 99999;
 }
 
 .wrapper {
