@@ -95,7 +95,18 @@ h2 {
 
 @keyframes scroll {
   from {
-    top: 0;
+    top: 0px;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -7500px;
+    transform: translateZ(-2500px) rotateX(21deg);
+  }
+}
+
+@keyframes scroll500 {
+  from {
+    top: 500px;
     transform: translateZ(0) rotateX(20deg);
   }
   to {
@@ -118,6 +129,6 @@ h2 {
 }
 @media (max-width: 768px) {
   .scroll-text {
-    animation: scroll 240s linear forwards;
+    animation: scroll500 240s linear forwards;
   }
 }
