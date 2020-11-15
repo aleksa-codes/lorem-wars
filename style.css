@@ -144,6 +144,28 @@ iframe {
   z-index: 999999;
 }
 
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +219,27 @@ h2 {
   }
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .scroll-text {
+    -webkit-animation: scroll 150s linear forwards;
+    animation: scroll 150s linear forwards;
+  }
+}
+@media (max-width: 992px) {
+  .scroll-text {
+    -webkit-animation: scroll 190s linear forwards;
+    animation: scroll 190s linear forwards;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-text {
+    -webkit-animation: scroll500 240s linear forwards;
+    animation: scroll500 240s linear forwards;
+  }
+}
+
 @-webkit-keyframes scroll500 {
   from {
     top: 500px;
@@ -220,48 +263,5 @@ h2 {
     top: -7500px;
     -webkit-transform: translateZ(-2500px) rotateX(21deg);
     transform: translateZ(-2500px) rotateX(21deg);
-  }
-}
-
-@-webkit-keyframes arrow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-  }
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-  }
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 1200px) {
-  .scroll-text {
-    -webkit-animation: scroll 150s linear forwards;
-    animation: scroll 150s linear forwards;
-  }
-}
-@media (max-width: 992px) {
-  .scroll-text {
-    -webkit-animation: scroll 190s linear forwards;
-    animation: scroll 190s linear forwards;
-  }
-}
-@media (max-width: 768px) {
-  .scroll-text {
-    -webkit-animation: scroll500 240s linear forwards;
-    animation: scroll500 240s linear forwards;
   }
 }
