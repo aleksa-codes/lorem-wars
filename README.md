@@ -2,7 +2,7 @@
 
 ### "A long time ago in a galaxy far, far away...."
 
-Check out the demo here -> [Lorem Wars](https://aleksastojsic.github.io/lorem-wars/)
+Check out the demo here -> [Lorem Wars](https://aleksa-codes.github.io/lorem-wars/)
 
 ## Characteristics
 
