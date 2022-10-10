@@ -12,5 +12,3 @@ This website has been created using :
 - CSS
 
 ## Feel free to contact me
-
-✉️ stojsic.aleksa@gmail.com
